@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppComponent } from './app.component';
 import { EstudianteComponent } from './components/estudiante/estudiante.component';
 import { ProfesorComponent } from './components/profesor/profesor.component';
@@ -14,11 +14,12 @@ import { EmpresaComponent } from './components/empresa/empresa.component';
     EstudianteComponent,
     ProfesorComponent,
     CursoComponent,
-    EmpresaComponent
+    EmpresaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
