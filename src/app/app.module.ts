@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EstudianteComponent } from './components/estudiante/estudiante.component';
 import { ProfesorComponent } from './components/profesor/profesor.component';
 import { CursoComponent } from './components/curso/curso.component';
+import { LayoutModule } from './layout/layout.module';
 import { EmpresaComponent } from './components/empresa/empresa.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { EmpresaComponent } from './components/empresa/empresa.component';
     BrowserModule,
     AppRoutingModule,
     MatPaginatorModule,
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
